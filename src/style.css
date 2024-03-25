@@ -1,0 +1,51 @@
+body {
+    font-family: "Laila", serif;
+}
+h1{
+    font-size: 65px;
+    line-height: 115px;
+    color: #DD9050;
+}
+h2{
+    font-size: 50px;
+    color: #503C2D;
+    width: 235px;
+}
+
+h3{
+    font-size: 40px;
+    color: #503C2D;
+    position: relative;
+    bottom: 154px;
+}
+
+.header{
+    background-color: rgba(148.64, 134.45, 126.47, 1) !important;
+    height: 65px;
+    width: 100%;
+}
+
+.header-link{
+    text-decoration: none;
+    color: white !important;
+    margin: 15px 50px 15px 30px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container{
+    display: flex;
+}
+.main-introductory-container{
+    margin-top: 190px;
+}
+
+.second-intro-container{
+    display: flex;
+}
+.profile-image{
+    position: relative;
+    bottom: 104px;
+    right: 52px;
+    width: 476px;
+}
