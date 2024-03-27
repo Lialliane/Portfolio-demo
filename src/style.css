@@ -12,13 +12,17 @@ h2{
     width: 235px;
 }
 
-h3{
-    font-size: 40px;
+h3 {
+    font-size: 35px;
     color: #503C2D;
     position: relative;
-    bottom: 15%;
+    bottom: -1%;
 }
 
+.container{
+    display: flex;
+    justify-content: center;
+}
 
 .header{
     background-color: rgba(148.64, 134.45, 126.47, 1) !important;
@@ -39,18 +43,19 @@ h3{
 }
 .main-introductory-container{
     margin-top: 190px;
+
 }
 
-.second-intro-container{
+.second-intro-container {
     display: flex;
-    height: 58%;
+    height: 40%;
+    width: 79%;
 }
-.profile-image{
-    position: relative;
-    bottom: 24%;
-    right: 7%;
 
-    height: 100%;
+.profile-image {
+    position: relative;
+    bottom: 3%;
+    height: 101%;
 }
 
 .arrow-image-container{
@@ -81,28 +86,34 @@ h3{
 
 @media (max-width: 992px) {
 
-    .profile-image{
-        width: 72%;
-        margin-left: 2%;
+    .profile-image {
+        width: 54%;
+        position: relative;
+        bottom: 6%;
+        right: 0%;
+        height: 103%;
     }
     h1{
         font-size: 60px;
-        line-height: 101px;
+        line-height: 159%;
     }
     h2{
         font-size: 40px;
     }
     h3{
-        font-size: 30px;
-        bottom: 25%;
-        margin-left: 11%;
+        font-size: 32px;
+
+        right: 7%;
     }
     .main-introductory-container{
         margin-top: 135px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .second-intro-container{
         height: 81%;
-        margin-left: 11%;
     }
 
     .app-images-container {
@@ -112,8 +123,6 @@ h3{
         height: auto;
         justify-content: center;
     }
-
-
 
     .app-image-secondary {
         margin: 20px;
@@ -145,50 +154,110 @@ h3{
 
 @media (max-width: 768px) {
 
-    .second-intro-container {
-        margin-left: 0px;
+    .nav-arrow-up {
+        top: -25%;
+        left: 57%;
     }
-    h3{
-        margin-left: 0px;
+    .nav-arrow-down {
+        top: -25%;
+        right: -17%;
+    }
+    .profile-image {
+        margin-left: 0%;
+        right: 10%;
     }
 }
 
 @media (max-width: 619px){
-    .profile-image {
-        height: 100%;
-        width: 65%;
-        bottom: 18%;
-        right: 13%;
-
-    }
-    h2 {
-        font-size: 34px;
-    }
-    h1 {
-        font-size: 47px;
-        line-height: 72px;
-        width: 224px;
-    }
-    h3 {
-        font-size: 26px;
-        bottom: 21%;
-        margin-left: 5%;
+    .header {
+        height: 54px;
     }
 
-    .nav-arrow-up {
-        top: 54%;
-        left: 35%;
-    }
-    .nav-arrow-down {
-        top: 54%;
-        right: 50%;
+    .main-introductory-container {
+        margin-top: 80px;
+        text-align: center;
     }
     .second-intro-container {
-        margin-left: 5%;
+        width: 56%;
+    }
+
+    .profile-image {
+        width: 38%;
+        margin-left: 0%;
+        bottom: 3%;
+        height: 99%;
+        right: 14%;
+    }
+
+    h1 {
+        font-size: 36px;
+        line-height: 150%;
+    }
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 18px;
+        bottom: 0%;
+        right: 0%;
+    }
+
+}
+
+@media (max-width: 576px) {
+/*    h1 {
+        font-size: 37px;
+        line-height: 146%;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 18px;
+        bottom: 34%;
+        right: -3%;
+    }
+    .profile-image {
+        width: 46%;
+        margin-left: 0%;
+        bottom: 18%;
+        height: 82%;
+        right: 5%;
+    }
+    .main-introductory-container {
+        position: relative;
+        right: 10%;
+    }
+    .second-intro-container {
+    text-align: left;
+    }*/
+
+}
+
+/*@media (max-width: 554px) {
+    .main-introductory-container {
+        position: relative;
+        right: 13%;
     }
 }
+@media (max-width: 554px) {
+    .main-introductory-container {
+        position: relative;
+        right: 16%;
+    }
+}
+@media (max-width: 473px) {
+    .main-introductory-container {
+        position: relative;
+        right: 20%;
+    }
+}*/
+
 @media (max-width: 417px) {
-    h2 {
+/*    h2 {
         font-size: 33px;
     }
     h1 {
@@ -205,7 +274,7 @@ h3{
         font-size: 26px;
         bottom: 22%;
         margin-left: 5%;
-    }
+    }*/
     .nav-arrow-up {
         top: 50%;
         left: 57%;
