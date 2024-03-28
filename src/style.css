@@ -169,6 +169,7 @@ h3 {
 }
 
 @media (max-width: 619px){
+
     .header {
         height: 54px;
     }
@@ -178,7 +179,7 @@ h3 {
         text-align: center;
     }
     .second-intro-container {
-        width: 56%;
+        width: 380px;
     }
 
     .profile-image {
@@ -203,87 +204,85 @@ h3 {
         right: 0%;
     }
 
+    .app-images-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        height: auto;
+        justify-content: center;
+        margin-top: 43px;
+    }
+
+    .app-image-main {
+        width: 80%;
+        height: 60%;
+    }
+
+    .app-image-secondary {
+        margin: 30px;
+        height: 53%;
+        margin-top: 6%;
+        max-width: initial;
+    }
+
+    .arrow-img {
+        height: 50px;
+    }
+    .nav-arrow-up {
+        top: -23%;
+        left: 57%;
+    }
+
+    .nav-arrow-down {
+        top: -23%;
+        right: -17%;
+    }
 }
 
 @media (max-width: 576px) {
-/*    h1 {
-        font-size: 37px;
-        line-height: 146%;
+    .app-image-secondary {
+        margin: 30px 15px;
+        height: 53%;
+        margin-top: 8%;
     }
-
-    h2 {
-        font-size: 26px;
-    }
-
-    h3 {
-        font-size: 18px;
-        bottom: 34%;
-        right: -3%;
-    }
-    .profile-image {
-        width: 46%;
-        margin-left: 0%;
-        bottom: 18%;
-        height: 82%;
-        right: 5%;
-    }
-    .main-introductory-container {
-        position: relative;
-        right: 10%;
-    }
-    .second-intro-container {
-    text-align: left;
-    }*/
-
-}
-
-/*@media (max-width: 554px) {
-    .main-introductory-container {
-        position: relative;
-        right: 13%;
-    }
-}
-@media (max-width: 554px) {
-    .main-introductory-container {
-        position: relative;
-        right: 16%;
-    }
-}
-@media (max-width: 473px) {
-    .main-introductory-container {
-        position: relative;
-        right: 20%;
-    }
-}*/
-
-@media (max-width: 417px) {
-/*    h2 {
-        font-size: 33px;
-    }
-    h1 {
-        font-size: 41px;
-        line-height: 57px;
-    }
-    .profile-image {
-        height: 100%;
-        width: 69%;
-        bottom: 18%;
-        right: 35%;
-    }
-    h3 {
-        font-size: 26px;
-        bottom: 22%;
-        margin-left: 5%;
-    }*/
     .nav-arrow-up {
-        top: 50%;
-        left: 57%;
+        top: -26%;
+        left: 61%;
     }
+
     .nav-arrow-down {
-        top: 50%;
-        right: 73%;
+        top: -26%;
+        right: -15%;
     }
     .arrow-img {
-        width: 80px;
+        height: 43px;
     }
+
+
+}
+
+@media (max-width: 417px) {
+    .app-image-secondary {
+        height: 40%;
+        margin: 0px 8px;
+        margin-top: 5%;
+
+    }
+    .app-image-main {
+        height: 46%;
+    }
+    .arrow-img {
+        height: 25px;
+        width: 40px;
+    }
+    .nav-arrow-up {
+        top: -14%;
+        left: 71%;
+    }
+
+    .nav-arrow-down {
+        top: -14%;
+        right: -7%;
+    }
+
 }
