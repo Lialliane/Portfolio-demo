@@ -1,11 +1,16 @@
 var index=0;
 var images=["src/e-commerce-site.png","src/weather-app.png","src/portfolio-site.png"];
+var links = ['https://www.shecodes.io/cohorts/shecodes-basics-0ecb1ade-6170-40b2-9236-4676ab7260c5/projects/1968163?_gl=1*1igqam1*_gcl_au*NTU5MjEzOTAyLjE3MTEzNzk0MjM.','https://l-weather-app.netlify.app','https://lujain-portfolio.netlify.app'];
 
 var topImage= document.getElementById("top-image");
 var hiddenTopImage= document.querySelector(".app-image-hidden-top");
 var middleImage= document.querySelector(".app-image-main");
 var hiddenMiddleImage= document.querySelector(".app-image-hidden");
 var bottomImage= document.getElementById("bottom-image");
+
+var topImageLink = document.querySelector(".first-image-link");
+var middleImageLink = document.querySelector(".main-image-link");
+var bottomImageLink = document.querySelector(".third-image-link");
 
 var arrowTop= document.querySelector(".nav-arrow-up");
 var arrowBottom= document.querySelector(".nav-arrow-down");
@@ -21,18 +26,24 @@ arrowBottom.addEventListener("click",moveDown);
 hiddenTopImage.addEventListener("animationend",function(){
     middleImage.style.opacity="1";
     hiddenMiddleImage.style.display="none";
+    hiddenTopImage.style.opacity="0";
 
 
     if(!animationReverse){
         console.log("before shifting" + images);
         images.unshift(images[images.length-1]);
         images.pop();
+        links.unshift(links[links.length-1]);
+        links.pop();
         console.log(images);
         topImage.src=images[index];
+        topImageLink.href=links[index];
         hiddenTopImage.src=images[index+2];
         middleImage.src=images[index+1];
+        middleImageLink.href=links[index+1];
         hiddenMiddleImage.src=images[index+1];
         bottomImage.src=images[index+2];
+        bottomImageLink.href=links[index+2];
     }
 
     hiddenTopImage.classList.remove("app-image-hidden-top-animation");
@@ -57,12 +68,16 @@ function moveUp(){
     images.shift();
     console.log(images);
     topImage.src=images[index];
+    topImageLink.href=links[index];
     middleImage.src=images[index+1];
+    middleImageLink.href=links[index+1];
     hiddenMiddleImage.src=images[index+1];
     bottomImage.src=images[index+2];
+    bottomImageLink.href=links[index+2];
     hiddenTopImage.src=images[index+2];
 
     middleImage.style.opacity="0";
+    hiddenTopImage.style.opacity="0.6";
     hiddenMiddleImage.style.display="block";
     topImage.classList.add("app-image-top-animation-reverse");
     hiddenTopImage.classList.add("app-image-hidden-top-animation-reverse");
@@ -76,6 +91,7 @@ function moveDown(){
     }
     hiddenTopImage.src=images[index+2];
     middleImage.style.opacity="0";
+    hiddenTopImage.style.opacity="0.6";
     hiddenMiddleImage.style.display="block";
     topImage.classList.add("app-image-top-animation");
     hiddenTopImage.classList.add("app-image-hidden-top-animation");
