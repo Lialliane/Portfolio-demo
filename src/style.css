@@ -38,7 +38,6 @@ footer{
 
 .header{
     background-color: rgba(148.64, 134.45, 126.47, 1) !important;
-    height: 65px;
     width: 100%;
     position: relative;
     z-index: 999;
@@ -47,8 +46,8 @@ footer{
 .header-link{
     text-decoration: none;
     color: white !important;
-    margin: 15px 50px 15px 30px;
-    font-size: 20px;
+    margin: 8px 21px 5px 20px;
+    font-size: 19px;
     font-weight: 500;
 }
 
@@ -73,12 +72,12 @@ footer{
 }
 
 .arrow-image-container{
-    height: 271px;
+    height: 251px;
     position: relative;
 }
 .main-image-link{
     position:absolute;
-    border: 3px solid deeppink;
+
     width: 473px;
     height: 337px;
     top: 330px;
@@ -86,7 +85,7 @@ footer{
 
 .first-image-link {
     position: absolute;
-    border: 3px solid yellow;
+
     width: 315px;
     height: 224px;
     top: 20px;
@@ -94,7 +93,7 @@ footer{
 }
 .third-image-link {
     position: absolute;
-    border: 3px solid green;
+
     width: 315px;
     height: 224px;
     top: 19px;
@@ -136,13 +135,13 @@ footer{
 .app-image-hidden-top{
     position: absolute;
     top: -178px;
-    width: 297.7px;
+    width: 315px;
     opacity: 0;
 }
 .app-image-hidden{
     position: absolute;
-    top: 329px;
-    width: 469px;
+    top: 324px;
+    width: 472.56px;
     display: none;
 }
 
@@ -187,7 +186,8 @@ footer{
 
     100%{
         position: absolute;
-        top: 64px;    }
+        top: 74px;
+    }
 }
 
 @keyframes slidedownsecond {
@@ -195,13 +195,13 @@ footer{
         opacity: 0.6;
         position: relative;
         top: 0px;
-        width: 67%;
+        width: 66%;
     }
 
     100%{
         opacity: 1;
         position: relative;
-        top: 249px;
+        top: 232px;
         width: 100%;
     }
 }
@@ -209,13 +209,13 @@ footer{
 @keyframes slidedownthird {
     0%{
         position: absolute;
-        top: 329px;
-        width: 469px;
+        top: 324px;
+        width: 472.56px;
         opacity: 1;
     }
     100%{
         position: absolute;
-        top: 689px;
+        top: 680px;
         width: 315px;
         opacity: 0.6;
     }
@@ -262,19 +262,24 @@ footer{
         top: 20px;
     }
     .app-image-hidden{
-        top: 317px;
+        top: 324px;
         width: 451px;
+    }
+    .app-image-hidden-top {
+        position: absolute;
+        top: -171px;
+        width: 297.7px;
     }
     @keyframes slidedownthird {
         0%{
             position: absolute;
-            top: 317px;
+            top: 324px;
             width: 451px;
             opacity: 1;
         }
         100%{
             position: absolute;
-            top: 658px;
+            top: 665px;
             width: 297.7px;
             opacity: 0.6;
         }
@@ -294,7 +299,7 @@ footer{
     .main-image-link{
         height: 268px;
         width: 376px;
-        top: 283px;
+        top: 291px;
     }
     .third-image-link {
         right: 63px;
@@ -303,7 +308,7 @@ footer{
         height: 178px;
     }
     .arrow-image-container {
-        height: 220px;
+        height: 217px;
     }
     .nav-arrow-up{
         right: 36%;
@@ -313,8 +318,8 @@ footer{
         right: 35.5%;
     }
     .app-image-hidden {
-        top: 281px;
-        width: 375px;
+        top: 291px;
+        width: 375.97px;
     }
     .app-image-hidden-top{
         width: 248.1px;
@@ -328,7 +333,7 @@ footer{
 
         100%{
             position: absolute;
-            top: 65px;
+            top: 73px;
         }
     }
 
@@ -343,7 +348,7 @@ footer{
         100%{
             opacity: 1;
             position: relative;
-            top: 200px;
+            top: 198px;
             width: 100%;
         }
     }
@@ -351,14 +356,14 @@ footer{
     @keyframes slidedownthird {
         0%{
             position: absolute;
-            top: 281px;
-            width: 375px;
+            top: 291px;
+            width: 375.97px;
             opacity: 1;
         }
         100%{
             position: absolute;
-            top: 568px;
-            width: 248px;
+            top: 579px;
+            width: 248.15px;
             opacity: 0.6;
         }
     }
@@ -561,8 +566,8 @@ footer{
 
 @media (max-width: 619px){
 
-    .header {
-        height: 54px;
+    .header-link {
+        font-size: 14px;
     }
 
     .main-introductory-container {
