@@ -340,6 +340,9 @@ footer{
     background: #a67b5a;
     border: 2px solid var(--primary-color);
 }
+.credits{
+    color: var(--primary-color);
+}
 @media (max-width: 1400px) {
     .first-image-link {
         right: 17%;
@@ -973,9 +976,10 @@ footer{
     .arrow-img {
         height: 43px;
     }
-    .contact-links {
+    .contact-links , .credits {
         font-size: 14px;
     }
+
     .open-project-button {
         width: 27%;
         padding: 11px 0px;
@@ -1133,6 +1137,12 @@ footer{
     .open-project-button {
         font-size: 8px;
         padding: 9px 0px;
+    }
+    .credits {
+        font-size: 9px;
+    }
+    .credits .contact-links {
+            font-size: 10px;
     }
     @keyframes slidedownfirst {
         0%{
