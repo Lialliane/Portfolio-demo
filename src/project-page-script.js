@@ -24,7 +24,7 @@ projectPageImage.addEventListener("animationend", function(){
         projectPageImage.classList.add("project-page-image-animation-reverse");
         projectPageImage.classList.remove("project-page-image-animation");
         projectPageImage.classList.remove("project-page-image-animation-reverse");
-    }, 70);
+    }, 100);
 
 
 })

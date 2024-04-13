@@ -308,7 +308,7 @@ footer{
     width: 50%;
 }
 .project-page-image-animation{
-    animation: 500ms ease-in-out fade-out ;
+    animation: 400ms ease-in-out fade-out ;
     animation-fill-mode: forwards;
 }
 .project-page-image-animation-reverse{
