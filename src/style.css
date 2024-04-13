@@ -1,3 +1,10 @@
+:root {
+    --primary-color: #DD9050;
+    --secondary-color: #503C2D;
+    --tertiary-color: rgba(148.64, 134.45, 126.47, 1);
+    --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
 html, body {
     max-width: 100%;
     overflow-x: hidden;
@@ -9,25 +16,25 @@ body {
 h1{
     font-size: 65px;
     line-height: 157%;
-    color: #DD9050;
+    color: var(--primary-color);
 }
 h2{
     font-size: 50px;
-    color: #503C2D;
+    color: var(--secondary-color);
     width: 235px;
 }
 
 h3 {
-    font-size: 35px;
-    color: #503C2D;
+    font-size: 33px;
+    color: var(--secondary-color);
     position: relative;
-    bottom: -1%;
+    bottom: -4%;
 }
 p{
     margin-top: 100px;
     font-size: 29px;
     font-weight: 500;
-    color: #DD9050;
+    color: var(--primary-color);
     text-align: center;
 }
 footer{
@@ -42,7 +49,7 @@ footer{
 }
 
 .header{
-    background-color: rgba(148.64, 134.45, 126.47, 1) !important;
+    background-color: var(--tertiary-color) !important;
     width: 100%;
     position: relative;
     z-index: 999;
@@ -88,6 +95,19 @@ footer{
 }
 .h1-about-me{
     line-height: 268%;
+}
+.button-container {
+    width: 67%;
+    margin-top: 71px;
+}
+.button-link {
+    background: var(--tertiary-color);
+    box-shadow: var(--box-shadow);
+    color: white;
+    padding: 12px 34px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 19px;
 }
 
 .arrow-image-container{
@@ -257,11 +277,16 @@ footer{
     text-align: left;
     font-size: 20px;
     line-height: 37px;
-    color: #513C2D;
+    color: var(--secondary-color);
     margin: 0 auto;
     width: 81%;
 }
-.email{
+.icons{
+    font-size: 30px;
+    margin: 0 auto;
+    color: var(--secondary-color);
+}
+.contact-links{
     text-decoration: none;
     color: #503C2D;
 }
@@ -337,6 +362,10 @@ footer{
         top: 19px;
         width: 250.7px;
         height: 178px;
+    }
+    .button-container{
+        margin-top: 109px;
+        width: 84%;
     }
     .arrow-image-container {
         height: 217px;
@@ -461,7 +490,13 @@ footer{
         width: 33%;
         bottom: 28px;
     }
-
+    .button-container {
+        margin-top: 64px;
+        width: 53%;
+    }
+    .contact-me-button{
+    margin-right: 10%;
+    }
 
 
     .app-images-container {
@@ -470,7 +505,7 @@ footer{
         align-items: flex-start;
         height: auto;
         justify-content: center;
-        margin-top: 166px;
+        margin-top: 104px;
         width: 1002px;
         align-items: center;
         position: relative;
@@ -663,8 +698,19 @@ footer{
         right: 2%;
         bottom: 0%;
     }
-        p{
+    p{
         font-size: 20px;
+    }
+    .button-link {
+        padding: 11px 29px;
+        font-size: 12px;
+    }
+    .contact-me-button{
+        margin:0;
+    }
+    .button-container {
+        margin-top: 24px;
+        width: 42%;
     }
 
     .app-images-container {
@@ -712,6 +758,9 @@ footer{
     .nav-arrow-down {
         top: 68%;
         right: 71%;
+    }
+    .icons {
+        font-size: 25px;
     }
 
     .footer {
@@ -838,6 +887,9 @@ footer{
     .arrow-img {
         height: 43px;
     }
+    .contact-links {
+        font-size: 14px;
+    }
 
     @keyframes slidedownfirst {
         0%{
@@ -904,7 +956,7 @@ footer{
 @media (max-width: 417px) {
     h3 {
         font-size: 18px;
-        right: 3%;
+        right: 0%;
         bottom: 0%;
     }
     .main-introductory-container-about-me {
@@ -917,6 +969,11 @@ footer{
     .h1-about-me {
         font-size: 26px;
     }
+    .profile-image {
+        bottom: 7%;
+        width: 39%;
+        height: 97%;
+    }
     .profile-image-about-me {
         width: 40%;
         bottom: 7px;
@@ -925,6 +982,14 @@ footer{
         font-size: 12px;
         width: 97%;
         line-height: 24px;
+    }
+    .button-link {
+        padding: 10px 25px;
+        font-size: 10px;
+    }
+    .button-container {
+        margin-top: 24px;
+        width: 53%;
     }
     .app-images-container {
         margin-top: 43px;
