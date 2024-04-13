@@ -43,10 +43,6 @@ footer{
     position: relative;
 }
 
-.container{
-    display: flex;
-    justify-content: center;
-}
 
 .header{
     background-color: var(--tertiary-color) !important;
@@ -58,27 +54,27 @@ footer{
 .header-link{
     text-decoration: none;
     color: white !important;
-    margin: 8px 21px 5px 20px;
+    margin: 0px 10px 0px 9px;
+    padding: 16px 19px 13px 19px;
     font-size: 19px;
     font-weight: 500;
+    transition: all 100ms ease-in-out ;
 }
 
-.container{
-    display: flex;
+.header-link:hover{
+    background: #82746d;
+    border-radius: 5px;
 }
+
 .main-introductory-container{
     margin-top: 190px;
-
 }
 .main-introductory-container-about-me{
-    display: flex;
-    justify-content: space-between;
     margin-top: 114px;
     width: 75%;
 }
 
 .second-intro-container {
-    display: flex;
     height: 40%;
     width: 79%;
 }
@@ -108,7 +104,14 @@ footer{
     border-radius: 25px;
     text-decoration: none;
     font-size: 19px;
+    transition: all 100ms ease-in-out ;
 }
+
+.button-link:hover {
+    background: var(--primary-color);
+    border: 2px solid var(--tertiary-color);
+}
+
 
 .arrow-image-container{
     height: 251px;
@@ -116,34 +119,26 @@ footer{
 }
 .main-image-link{
     position:absolute;
-
     width: 473px;
     height: 337px;
     top: 330px;
 }
 
-.first-image-link {
+.first-image-link , .third-image-link {
     position: absolute;
-
     width: 315px;
     height: 224px;
     top: 20px;
     right: 79px;
 }
 .third-image-link {
-    position: absolute;
-
-    width: 315px;
-    height: 224px;
     top: 19px;
-    right: 79px;
 }
 .app-images-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 80%;
-
 }
 .arrow-image-container {
     width: 100%;
@@ -273,7 +268,7 @@ footer{
 
 }
 
-.text-about-me{
+.text-about-me , .text-project-info{
     text-align: left;
     font-size: 20px;
     line-height: 37px;
@@ -283,10 +278,6 @@ footer{
 }
 .text-project-info{
     text-align: center;
-    font-size: 20px;
-    line-height: 37px;
-    color: var(--secondary-color);
-    margin: 0 auto;
     width: 57%;
 }
 .icons{
@@ -299,7 +290,7 @@ footer{
     color: #503C2D;
 }
 .footer{
-    background-color: rgba(148.64, 134.45, 126.47, 1) !important;
+    background-color: var(--tertiary-color) !important;
     height: 50px;
     width: 100%;
 }
@@ -342,6 +333,12 @@ footer{
 .open-project-button{
     background: var(--primary-color);
     width: 19%;
+    transition: all 100ms ease-in-out ;
+}
+
+.open-project-button:hover {
+    background: #a67b5a;
+    border: 2px solid var(--primary-color);
 }
 @media (max-width: 1400px) {
     .first-image-link {
