@@ -14,13 +14,20 @@ projectPageArrowLeft.addEventListener("click", fadeOutLeft);
 
 projectPageArrowRight.addEventListener("click", fadeOutRight);
 
-/*projectPageImage.addEventListener("animationend", function(){
+projectPageImage.addEventListener("animationend", function(){
+
     projectPageImage.src=images[index];
     projectPageOpenProjectLink.href=links[index];
-    projectPageHeading.innerText=heading[index];
+    projectPageHeading.innerText=headings[index];
 
-    projectPageImage.classList.remove("project-page-image-animation");
-})*/
+    setTimeout(function(){
+        projectPageImage.classList.add("project-page-image-animation-reverse");
+        projectPageImage.classList.remove("project-page-image-animation");
+        projectPageImage.classList.remove("project-page-image-animation-reverse");
+    }, 70);
+
+
+})
 
 function fadeOutLeft(){
     projectPageImage.classList.add("project-page-image-animation");
@@ -31,8 +38,6 @@ function fadeOutLeft(){
     links.shift();
     headings.push(headings[index]);
     headings.shift();
-
-    setTimeout(updateWebsite, 500);
 
 }
 function fadeOutRight(){
@@ -45,13 +50,4 @@ function fadeOutRight(){
     headings.unshift(headings[headings.length-1]);
     headings.pop();
 
-    setTimeout(updateWebsite, 500);
-
-}
-function updateWebsite(){
-    projectPageImage.src=images[index];
-    projectPageOpenProjectLink.href=links[index];
-    projectPageHeading.innerText=headings[index];
-
-    projectPageImage.classList.remove("project-page-image-animation");
 }

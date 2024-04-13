@@ -317,21 +317,19 @@ footer{
     width: 50%;
 }
 .project-page-image-animation{
-    animation: 1000ms ease-in-out fade-out ;
+    animation: 500ms ease-in-out fade-out ;
+    animation-fill-mode: forwards;
+}
+.project-page-image-animation-reverse{
+    animation: 250ms ease-in-out fade-out reverse;
 }
 
 @keyframes fade-out {
     0%{
         opacity: 1;
     }
-    50%{
-      opacity: 0;
-    }
-    75%{
-            opacity: 0.25;
-    }
     100%{
-        opacity: 1;
+        opacity: 0;
     }
 }
 
