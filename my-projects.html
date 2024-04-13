@@ -1,10 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/daa612db23.js" crossorigin="anonymous"></script>
+    <title>Lujain khatib project list</title>
 </head>
 <body>
-
+<nav class="navbar navbar-expand-lg bg-body-tertiary header">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active header-link" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link header-link" href="/about-me.html">About me</a>
+                <a class="nav-link header-link" href="#contact-me">Contact me</a>
+                <a class="nav-link header-link" href="/my-projects.html">My projects</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid">
+    <div class="row ">
+        <h1 class="project-page-heading text-center col mt-5">E-commerce site</h1>
+    </div>
+    <div class="row d-flex flex-row mt-3 justify-content-center">
+        <button class="arrow-left-project-page img-fluid col-2"><img class=" arrow-img-project-page" src="src/arrow-down.png" alt="arrow"></button>
+        <img class="img-fluid  col-8" id="project-page-image" src="src/e-commerce-site-large.png" alt="portfolio-site"/>
+        <button class="arrow-right-project-page img-fluid col-2"><img class=" arrow-img-project-page" src="src/arrow-down.png" alt="arrow"></button>
+    </div>
+    <div class="row">
+        <span class="col"></span>
+        <a href="https://www.shecodes.io/cohorts/shecodes-basics-0ecb1ade-6170-40b2-9236-4676ab7260c5/projects/1968163?_gl=1*1igqam1*_gcl_au*NTU5MjEzOTAyLjE3MTEzNzk0MjM." target="_blank" class="button-link open-project-button text-center col-4 mt-5">Open Project</a>
+        <span class="col"></span>
+    </div>
+    <div class="row">
+        <p class="text-project-info mt-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam vitae massa ac malesuada. Praesent eget bibendum leo, id mattis ipsum. Duis viverra vestibulum interdum. Suspendisse potenti. Nullam scelerisque nisi nec cursus aliquam. Nulla malesuada nibh non nulla pulvinar, at dignissim leo iaculis. Pellentesque laoreet tortor sit amet enim vulputate condimentum. Nunc ac volutpat est. Phasellus lacus nunc, vehicula a magna at, tristique consequat orci. Donec sagittis purus sed metus blandit, facilisis ultrices lorem dictum. Mauris facilisis nisl nec dui euismod, id porttitor ligula tincidunt.
+        </p>
+    </div>
+</div>
+<footer>
+    <p id="contact-me">Contact me:- </p>
+    <div class="d-flex flex-row justify-content-center mt-5 mb-3">
+        <div class="d-flex flex-column me-5">
+            <i class="fa-regular fa-envelope icons"></i>
+            <a href="mailto:lojain01k@gmail.com" target="_blank" class="contact-links" >Email</a>
+        </div>
+        <div class="d-flex flex-column ms-5">
+            <i class="fa-brands fa-linkedin icons "></i>
+            <a href="mailto:lojain01k@gmail.com" target="_blank" class="contact-links" >Linked-in</a>
+        </div>
+    </div>
+    <div class="footer"></div>
+</footer>
+<script src="src/project-page-script.js"></script>
 </body>
 </html>

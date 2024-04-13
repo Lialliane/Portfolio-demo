@@ -1,6 +1,7 @@
 var index=0;
 var images=["src/e-commerce-site.png","src/weather-app.png","src/portfolio-site.png"];
 var links = ['https://www.shecodes.io/cohorts/shecodes-basics-0ecb1ade-6170-40b2-9236-4676ab7260c5/projects/1968163?_gl=1*1igqam1*_gcl_au*NTU5MjEzOTAyLjE3MTEzNzk0MjM.','https://l-weather-app.netlify.app','https://lujain-portfolio.netlify.app'];
+var headings = ["E-commerce site","Weather app","Portfolio site"];
 
 var topImage= document.getElementById("top-image");
 var hiddenTopImage= document.querySelector(".app-image-hidden-top");
@@ -15,8 +16,11 @@ var bottomImageLink = document.querySelector(".third-image-link");
 var arrowTop= document.querySelector(".nav-arrow-up");
 var arrowBottom= document.querySelector(".nav-arrow-down");
 
-var animation= document.querySelector(".animation");
+
+
+
 var animationReverse = false;
+
 
 
 arrowTop.addEventListener("click",moveUp);
@@ -59,6 +63,7 @@ hiddenTopImage.addEventListener("animationend",function(){
 });
 
 
+
 function moveUp(){
     if(!animationReverse){
         animationReverse=true;
@@ -66,6 +71,8 @@ function moveUp(){
     console.log(images);
     images.push(images[index]);
     images.shift();
+    links.push(links[index]);
+    links.shift();
     console.log(images);
     topImage.src=images[index];
     topImageLink.href=links[index];
@@ -98,3 +105,5 @@ function moveDown(){
     hiddenMiddleImage.classList.add("app-image-middle-animation");
     bottomImage.classList.add("app-image-bottom-animation");
 }
+
+
