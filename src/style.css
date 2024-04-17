@@ -1282,6 +1282,10 @@ footer{
         width: 86%;
         margin-top: 26px !important;
     }
+    .button-link {
+        padding: 8px 17px;
+        font-size: 10px;
+    }
 
     @keyframes slidedownfirst {
         0%{
