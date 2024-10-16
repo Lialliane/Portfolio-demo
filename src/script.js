@@ -1,6 +1,6 @@
 var index=0;
 var images=["src/e-commerce-site.png","src/weather-app.png","src/portfolio-site.png"];
-var links = ['https://www.shecodes.io/cohorts/shecodes-basics-0ecb1ade-6170-40b2-9236-4676ab7260c5/projects/1968163?_gl=1*1igqam1*_gcl_au*NTU5MjEzOTAyLjE3MTEzNzk0MjM.','https://l-weather-app.netlify.app','https://lujain-portfolio.netlify.app'];
+var links = ['https://www.shecodes.io/cohorts/1512/projects/1968163','https://l-weather-react.netlify.app','https://lujain-portfolio.netlify.app'];
 var headings = ["E-commerce site","Weather app","Portfolio site"];
 
 var topImage= document.getElementById("top-image");
